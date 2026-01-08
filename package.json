@@ -1,6 +1,6 @@
 {
-  "name": "node-pty",
-  "description": "Fork pseudoterminals in Node.JS",
+  "name": "node-pty-android-arm64",
+  "description": "Android/Termux-only fork of node-pty for ARM64 (bionic)",
   "author": {
     "name": "Microsoft Corporation"
   },
@@ -10,21 +10,19 @@
   "types": "./typings/node-pty.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/microsoft/node-pty.git"
+    "url": "https://github.com/DioNanos/node-pty-android-arm64.git"
   },
   "files": [
     "binding.gyp",
     "lib/",
     "scripts/",
     "src/",
-    "deps/",
     "prebuilds/",
-    "third_party/",
     "typings/"
   ],
-  "homepage": "https://github.com/microsoft/node-pty",
+  "homepage": "https://github.com/DioNanos/node-pty-android-arm64",
   "bugs": {
-    "url": "https://github.com/microsoft/node-pty/issues"
+    "url": "https://github.com/DioNanos/node-pty-android-arm64/issues"
   },
   "keywords": [
     "pty",
@@ -32,13 +30,21 @@
     "terminal",
     "pseudoterminal",
     "forkpty",
-    "openpty"
+    "openpty",
+    "android",
+    "termux"
+  ],
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm64"
   ],
   "scripts": {
     "build": "tsc -b ./src/tsconfig.json",
     "watch": "tsc -b -w ./src/tsconfig.json",
     "lint": "eslint -c .eslintrc.js --ext .ts src/",
-    "install": "node scripts/prebuild.js || node-gyp rebuild",
+    "install": "node scripts/prebuild.js || node scripts/rebuild-android.js",
     "postinstall": "node scripts/post-install.js",
     "compileCommands": "node scripts/gen-compile-commands.js",
     "test": "cross-env NODE_ENV=test mocha -R spec --exit lib/*.test.js",

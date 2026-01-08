@@ -1,4 +1,7 @@
 {
+  'variables': {
+    'android_ndk_path%': '<!(node -p "process.env.ANDROID_NDK_HOME || process.env.ANDROID_NDK_ROOT || process.env.ANDROID_NDK || process.env.NDK_HOME || process.env.PREFIX || \'\'")',
+  },
   'target_defaults': {
     'dependencies': [
       "<!(node -p \"require('node-addon-api').targets\"):node_addon_api_except",
