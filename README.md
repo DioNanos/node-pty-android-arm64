@@ -67,3 +67,10 @@ ptyProcess.write('ls\r');
 ## Credits
 
 Based on the original `node-pty` project by Microsoft and contributors.
+
+## License
+
+MIT License — Copyright (c) 2026 Davide A. Guglielmi<br>
+See [LICENSE](LICENSE) for details.<br>
+Based on the original `node-pty` project by Microsoft and contributors.<br>
+Made in Italy 🇮🇹
