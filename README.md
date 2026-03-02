@@ -70,7 +70,7 @@ Based on the original `node-pty` project by Microsoft and contributors.
 
 ## License
 
-MIT License (see [LICENSE](LICENSE)).<br>
-Android/Termux ARM64 fork packaging and maintenance by Davide A. Guglielmi.<br>
 Original `node-pty` work by Microsoft, contributors, and prior maintainers (as credited in the project and license).<br>
+MIT License (see [LICENSE](LICENSE)).<br>
+Android/Termux ARM64 fork packaging and maintenance by WellaNet.Dev<br>
 Made in Italy 🇮🇹
