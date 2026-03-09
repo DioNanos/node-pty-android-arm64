@@ -72,5 +72,5 @@ Based on the original `node-pty` project by Microsoft and contributors.
 
 Original `node-pty` work by Microsoft, contributors, and prior maintainers (as credited in the project and license).<br>
 MIT License (see [LICENSE](LICENSE)).<br>
-Android/Termux ARM64 fork packaging and maintenance by WellaNet.Dev<br>
+Termux-port maintenance by Davide A. Guglielmi<br>
 Made in Italy 🇮🇹
